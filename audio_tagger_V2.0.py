@@ -128,7 +128,7 @@ def main():
 
 
     parser = argparse.ArgumentParser(description='Audio file tag manipulation')
-    action = parser.add_mutually_exclusive_group()
+    action = parser.add_mutually_exclusive_group(required=True)
     action.add_argument('--read', type=PairA, help='Read specified tag.')
     action.add_argument('--write', type=PairA, help='Write specified \
     tag.')
